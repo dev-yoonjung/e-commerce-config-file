@@ -1,6 +1,6 @@
 token:
   expiration_time: 864000000
-  secret: "{cipher}AQAHwerj+4v1bRv8Wu49Iygol7f7PJbk39+JC2qsGAy+jswcpF2lqKSwcUQtsdG9YID8g59CBshMohj+T/ImPfxWnTP37JalrfdD/iiCcpJNbfyPSw36Q/5gcHLlL9QMpgiwtBD6bRjhA/GxkGD3vJqWSbIArE6ZZwOZfsqOBJ+fnNJ4VP1a5AblQWXFCTPkhNeD5Gs/l4o5JhceTc+oNUijCyOTXBitYnbQaCusOTFi5ve7yczD5TYfBiXKjAznFeSMdf/BM0nugcc/7i2rMRpEopkOtUyM0++sdIu9rjvVZ7rSsVYHOP9D5OFCg2+YySATnjIkJoHX2uXXAvnsupBfeQrhhWjeITx8TCVwd/8PjtV6acphOrFTteqi4AhDkMBwZhF7c4m2fuM3LjRWum8M"
+  secret: "{cipher}AQCGul6QdNzvEvrMCE4YipQ3MR9cIgfhITrp0EbBq3MsbbGWpHh0uP83zsU3z+B8OAFwL1hBdBroIztdI8urs2rM4ozQ3jB9iDoGjmR4Lht+Hy+4H7RDj39gWA2CQgHxUDzrVKly8dwTdxDbOCOHKc5i/w5HM17KoySUE/uJfviJvmWjytEA3HxXxeHw15qmCSp1fU2XL8f9uQEIJzrwGJy29562TIHWKXYWLOeWRn6DVW8ws9p03D7FXa67Dg5fX/6+nk+SPrhu1tU12s3vKWevjB4TuEdqL4pDhw6jWE7Nv8kFAYNYjO7mPfc12YC55AyAsZVnaTWEWRL1qmYawKDT5hNooogy3oa5oUPW9ONbw/zvChi+KzBN/QfYBVz7UjI="
 
 gateway:
     ip: 127.0.0.1
@@ -10,10 +10,13 @@ spring:
     driver-class-name: org.h2.Driver
     url: jdbc:h2:mem:test
     username: sa
-    password: "{cipher}AQCidvf4l3zNWIKsTQRZ/jjXHt1iipYS4aL2ZK9nd+783EnSDR6G3nxdzAdpi5I2f3/0C8bS45t885/jdy3zjs0BjJL7VV75aB15hFmACuFVVh/7fEwT5PS0jzw4Gr2BKQjFL4ctCDcc+eT3E5YYEialBlf8uazTx9DU7DpE3jHlg6hu3qhuwOz/9zM2rByS2Y3wky8sY4O8+2RSFeV2T8QMkdt2qDJPGYjvGFoV9kbrJSZJsKLg6S02bHLJn5AEjV9TaJGnjiZxQ6vf5BszZB0+/l0AFo2QceKqejwpS2CGUigwbk7fMSJqG2o7/fkLN8XIaMUm/V6TWH9/xTod84U6pPK4zWZPv6N0w+eP24ksy17LfEFqzSKCpYTmV34ZurM="
+    password: "{cipher}AQAtvYiimUY5xrNcHXpABwD+9V9ggGLWnzdrf9rFOrwoHPv5aPo0sQbtAesxwAH37gEWgJQXhfouPc9IT7DKj5rXqLydqhkMzRidLoBlbKfqkKVxB4/LnO2F8rviorKqox+aagZkMC3xZTtdqXWo50rsEAdvxshzLXweyhQ2/SyHTCHWEP2CRKa7MZbnQic1p83kVJ8mE+BGpkkXKuWb/FS5URKgCm+evyfeyTM0qEIoUt9DE5mj+QgW8EAkX4GwwbmNCrEEzY8Pn7Ljx/ZBCYVq3zliO7L0QCubaTvPi1rW7D/OxWNQdY5/S6aTK3TBce3PzLrJDpCIYqZ656jkAJbCssm213tyjjkhoIrMfR33HjxbSGReUUFzR4lx859Ls6M="
   h2:
     console:
       enabled: true
       settings:
         web-allow-others: true
       path: /h2-console
+
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders

@@ -17,3 +17,7 @@ spring:
       settings:
         web-allow-others: true
       path: /h2-console
+
+order_service:
+    exception: 
+        orders_is_empty: User's orders is empty.
